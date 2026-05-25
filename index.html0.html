@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilian Amajuoyi | Cloud Engineer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+
+        /* Header */
+        header {
+            background: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: bold; font-size: 1.4rem; color: #2563eb; }
+        .nav-links a {
+            margin-left: 2rem;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* Hero */
+        .hero {
+            padding: 100px 0;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            background: white;
+        }
+        .hero-content { flex: 1; }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .hero .title {
+            font-size: 1.5rem;
+            color: #2563eb;
+            margin-bottom: 20px;
+        }
+        .hero img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid #f0f0f0;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 0;
+        }
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .about p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project-info {
+            padding: 25px;
+        }
+        .project-info h3 {
+            margin-bottom: 10px;
+            color: #1f2937;
+        }
+
+        /* Experience & Skills */
+        .experience, .skills {
+            background: white;
+        }
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-tag {
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            background: #1f2937;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Lilian Amajuoyi</div>
+                <div class="nav-links">
+                    <a href="#projects">Projects</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container" style="display: flex; align-items: center;">
+            <div class="hero-content">
+                <h1>Hi, I'm Lilian Amajuoyi</h1>
+                <p class="title">Junior Cloud Engineer & AI Quality Analyst</p>
+                <p>Cloud computing graduate with hands-on AWS experience and over <strong>400 ML model audits</strong>. Passionate about building reliable cloud infrastructure and ensuring AI system quality.</p>
+                <br>
+                <a href="#projects" style="background:#2563eb; color:white; padding:12px 28px; border-radius:6px; text-decoration:none; font-weight:500;">View My Projects</a>
+            </div>
+            <img src="https://github.com/CloudNerd001/lilian_portfolio/blob/main/portrait.jpeg?raw=true" alt="Lilian Amajuoyi">
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <img src="YOUR-EMAIL-PROJECT-SCREENSHOT.jpg" alt="Serverless Email System">
+                    <div class="project-info">
+                        <h3>Serverless Email Notification System</h3>
+                        <p>Built and deployed a fully functional contact form using AWS Lambda, API Gateway, SES & S3.</p>
+                        <small><strong>Tech:</strong> Lambda (Python), API Gateway, SES, S3, IAM</small>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="YOUR-IAM-PROJECT-SCREENSHOT.jpg" alt="IAM Project">
+                    <div class="project-info">
+                        <h3>IAM Role-Based Access Control</h3>
+                        <p>Designed and implemented secure least-privilege IAM architecture with custom policies and MFA enforcement.</p>
+                        <small><strong>Tech:</strong> IAM, S3, JSON Policies, MFA</small>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="YOUR-WORDPRESS-SCREENSHOT.jpg" alt="WordPress Deployment">
+                    <div class="project-info">
+                        <h3>WordPress Deployment on AWS</h3>
+                        <p>Provisioned a scalable WordPress site with EC2, custom VPC, RDS, and S3 media storage.</p>
+                        <small><strong>Tech:</strong> EC2, VPC, RDS, S3</small>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <h3>QA Analyst – ML Model Auditing</h3>
+            <p><strong>Hugo Technologies</strong> | April 2023 – Present</p>
+            <ul>
+                <li>Audited <strong>400+</strong> machine learning model outputs across multimodal AI, content verification, MovieGen, bounding boxes, audio sentiment & transcription</li>
+                <li>Contributed directly to the successful launch and delivery of multiple production AI systems</li>
+                <li>Collaborated with engineering teams to improve model accuracy, reduce bias, and enhance reliability</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill-tags">
+                <span class="skill-tag">AWS (EC2, VPC, Lambda, S3, IAM)</span>
+                <span class="skill-tag">API Gateway & SES</span>
+                <span class="skill-tag">IAM Policies & MFA</span>
+                <span class="skill-tag">ML Model Quality Assurance</span>
+                <span class="skill-tag">Linux / Ubuntu</span>
+                <span class="skill-tag">RDS Databases</span>
+                <span class="skill-tag">Serverless Architecture</span>
+                <span class="skill-tag">Python (Lambda)</span>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <p><strong>Get in touch</strong></p>
+            <p>lilianamajuoyigr@gmail.com | +234 902 143 0918</p>
+            <p>
+                <a href="https://linkedin.com/in/lilianamajuoyi" style="color:white; margin:0 10px;">LinkedIn</a> |
+                <a href="https://x.com/MmeriLilian" style="color:white; margin:0 10px;">X (Twitter)</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
